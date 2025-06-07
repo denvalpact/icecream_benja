@@ -89,6 +89,13 @@
       }
     }
 
+    @media (max-width: 600px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+       }
+    }
+
+
     /* Gallery styles */
     #gallery {
       background-color: #fff;
@@ -97,11 +104,12 @@
     }
 
     .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-      margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Exactly two columns */
+        gap: 15px;
+        margin-top: 20px;
     }
+
 
     .gallery-grid img {
       width: 100%;
@@ -131,7 +139,7 @@
   <main>
     <section id="home">
       <h2>Home</h2>
-      <p>Welcome to Ice Cream Benja, where you are assured to get the best scream with ice cream!</p>
+      <p>Welcome to Ice Cream Benja, where you are assured to get the scream with each scoop of ice cream!</p>
     </section>
 
     <section id="about">
@@ -154,25 +162,25 @@
       <h2>Gallery</h2>
       <p>Take a look at some of our most loved ice cream creations!</p>
       
-      <div id="vanilla">
+      <div id="vanilla" style="margin-top: 40px;">
         <div class="gallery-grid">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMB-0Wp31tYn42jRSN4M3T6O0NuXsqUEARJw&s" alt="Vanilla Ice Cream">
         </div>
       </div>
 
-      <div id="chocolate">
+      <div id="chocolate" style="margin-top: 40px;">
         <div class="gallery-grid">
             <img src="https://pudgefactor.com/wp-content/uploads/2021/06/Featured-Triple-Chocolate-Ice-Cream1.jpg" alt="Chocolate Ice Cream">
         </div>
       </div>
 
-      <div id="strawberry">
+      <div id="strawberry" style="margin-top: 40px;">
         <div class="gallery-grid">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT7iio8v21SWHMHBfSiaed0Ti7W1L9ZH8vHQ&s" alt="Strawberry Ice Cream">
         </div>
       </div>
 
-      <div id="mint">
+      <div id="mint" style="margin-top: 40px;">
         <div class="gallery-grid">
             <img src="https://4sonrus.com/wp-content/uploads/2022/07/No-Churn-Mint-Chocolate-Chip-Ice-Cream-8.jpg" alt="Mint Ice Cream">
         </div>
