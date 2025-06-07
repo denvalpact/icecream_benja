@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Benja</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            background-size: cover;
+            background-position: center;
+            transition: background-image 1.5s ease-in-out;
+            animation: bgSlideshow 40s infinite;
+            position: relative;
+            z-index: 1;
+            }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @keyframes bgSlideshow {
+            0% { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7U9gp5C-2H66Qm8N-vK9eHcLsnIkYtHDTEA&s'); }
+            25% { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0LELgv1d2-jzJ7K_7tgnQfksiIxt9AdbUGQ&s'); }
+            50% { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnZi5tP89q6gu0nXlWlPI3HoO_wnytlDEpNw&s'); }
+            75% { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGWSoT7zPPi6BNrgBKbD1t6QOqz1Luv3ghkw&s'); }
+            100% { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbSwLKWfRzfJfwWBIJryPlHTxr_oT4cbEuEg&s'); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Welcome to Ice Cream Benja</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#flavors">Flavors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to Ice Cream Benja, where you are assured to get the best scream with ice cream!</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are passionate about making delicious ice cream with an assurance for our customers to get the best of the feel there could be.</p>
+        </section>
+
+        <section id="flavors">
+            <h2>Flavors</h2>
+            <p>Explore our wide range of flavors that will tantalize your taste buds.</p>
+            <ul>
+                <li><a href="#vanilla">Vanilla</a></li>
+                <li><a href="#chocolate">Chocolate</a></li>
+                <li><a href="#strawberry">Strawberry</a></li>
+                <li><a href="#mint">Mint</a></li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions? Reach out to us at <a href="mailto:jonahbenjaminkirigwajjo@gmail.com">jonahbenjaminkirigwajjo@gmail.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ice Cream Benja</p>
+    </footer>
+</body>
+</html>
